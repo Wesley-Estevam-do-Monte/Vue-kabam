@@ -1,2 +1,2 @@
-# Vue-kabam
+# Vue-kanban
 Primeiro projeto com Vue
