@@ -256,7 +256,7 @@ export default {
 
           axios.post('http://localhost:3000/cadastrar', {
             nome: this.newTask,
-            dia_semana: 1
+            dia_semana: 1,         
           })
           this.newTask = ""
           this.list();
@@ -301,7 +301,6 @@ export default {
       
     },
     edit(id, name, dia){
-      //console.log(dia)
 
       let novoNome = prompt("Digite o novo texto da tarefa!", name);
       axios.put(`http://localhost:3000/editar/${id}`, {
@@ -311,7 +310,7 @@ export default {
       });
      this.list()
     },
-  },
+  },  
 }
 </script>-
 
